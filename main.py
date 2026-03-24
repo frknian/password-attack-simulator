@@ -2,6 +2,7 @@ import string
 from brute_force import brute_force
 from math_analysis import comparison_table, compare_real_vs_theory
 from dataset_generator import generate_dataset, load_common_passwords, estimate_dictionary_attack_time
+from visualizer import plot_all
 
 CHARSETS = {
     "1": ("Sadece rakam",        string.digits),
@@ -84,3 +85,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from visualizer import plot_crack_time
